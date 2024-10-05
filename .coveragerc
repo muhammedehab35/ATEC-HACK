@@ -1,0 +1,21 @@
+[run]
+source = pyart
+include = */pyart/*
+omit =
+    */setup.py
+    */tests*
+    pyart/aux_io/*
+	tests/io/test_rsl.py
+	tests/correct/test_dealias.py
+	pyart/io/rsl.py
+	pyart/correct/dealias.py
+	pyart/graph/gridmapdisplay_basemap.py
+	pyart/graph/radarmapdisplay_basemap.py
+
+[report]
+exclude_lines =
+    pragma: no cover
+    if self.debug:
+    if debug:
+    raise NotImplementedError
+    if __name__ == .__main__.:
